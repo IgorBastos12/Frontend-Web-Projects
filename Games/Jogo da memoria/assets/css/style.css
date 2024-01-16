@@ -6,8 +6,8 @@
     --color-card-front: #053C4D;
     --color-card-back: #07A0C3; 
     --color-background-game: #D4ECF3;
-    --color-background-gameOver: rgba(4, 4, 4, 0.575);
-    --color-background-waring: #F6F4F3;
+    --color-background-gameOver: rgba(4, 4, 4, 0.697);
+    --color-background-waring: #f6f4f3d7;
     --color-btn: #F0C808;
 
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .waring{
-    width: 500px;
+    width: 460px;
     height: 200px;
     background-color: var(--color-background-waring);
     display: flex;
