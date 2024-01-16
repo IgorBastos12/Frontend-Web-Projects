@@ -31,7 +31,6 @@ const game = {
 
     this.shuffleCards(); // Após isso chamamos nosso método para embaralhar carta,  ele pega o novo array demebrado de cards e mistura os elementos.
 
-    console.log(this.cards);
   },
 
   CardInformation: function (tech) {
