@@ -12,7 +12,6 @@ function startGame() {
     addCardsScreen();
     ClickandPlay()
     
-
 }
 
 
@@ -59,33 +58,37 @@ function ClickandPlay() {
             
             if(game.lockMode == false){
                 card.classList.add('flip');
-            } 
-
-
-            if(game.played(card) == false){
-
-                setTimeout(() => {
-
-                    let firsCardView = document.getElementById(game.memoryFirstCard.id);
-
-                    firsCardView.classList.remove('flip');
-
-                    let secundCardView = document.getElementById(game.memorySecundCard.id);
-
-                    secundCardView.classList.remove('flip');
-
-                    
-
-                }, 1000);
-
-                
-
-            }
-        
-            game.clearMemory();
+                game.setPairCards(card);
             
-                            
+            }
+            
+            if (game.lockMode == true) {
 
+                if(game.checkPair() == false) {
+
+
+                    setTimeout(() => {
+                        
+                        let firstCardView = document.getElementById(game.memoryFirstCard.id);
+                        let secundCardView = document.getElementById(game.memorySecundCard.id);
+
+                        firstCardView.classList.remove('flip');
+                        secundCardView.classList.remove('flip');
+
+                        game.clear();
+
+                    }, 1000);
+                    
+                    
+                
+                } else {
+
+
+                    game.clear();
+                }
+            }
+
+                        
         });
     }   
 

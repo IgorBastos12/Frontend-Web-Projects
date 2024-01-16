@@ -77,24 +77,6 @@ const game = {
 
   },
 
-  played: function (e) {
-
-    if(this.setPairCards(e)){
-
-      if(this.checkPair()) {
-
-        
-        return  true;
-
-      } else {
-        
-        return false;
-      }
-    }
-
-
-  },
-
   
   setPairCards: function(e){
 
@@ -108,10 +90,8 @@ const game = {
       this.memorySecundCard = setCard;
       this.lockMode = true;
   
-      return true;
       
     }
-
     
   }, 
 
@@ -120,11 +100,12 @@ const game = {
     return this.memoryFirstCard.tech == this.memorySecundCard.tech;
   },
 
-  clearMemory: function () {
+  clear: function () {
 
-    this.memoryFirstCard == null;
-    this.memorySecundCard == null;
-    this.lockMode == false;
+    this.memoryFirstCard = null;
+    this.memorySecundCard = null;
+    this.lockMode = false;
+
   }
 
 
