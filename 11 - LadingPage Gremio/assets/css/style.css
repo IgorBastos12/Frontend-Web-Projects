@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+
+    --color-dark-100: #1d1d1d;
+    --color-dark-100-transp: #1d1d1d71;
+
+    --color-white: #F0F0F0;
+
+    --color-blue-50:#2AAAE7;
+    --color-blue-100:#1a719a;
+    --color-blue-100-transp:#1a719a5f;
+
+
+    --color-gradient: linear-gradient(115deg, var(--color-dark-100-transp), var(--color-blue-100-transp));
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--color-white);
+    
+}
+
+
+body{
+   height: 100vh;
+   width: 100%;
+   background:var(--color-gradient), url(../img/fundo_gremio.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+
+header{
+    background-color: var(--color-dark-100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+#logo img{
+    width: 200px;
+    margin: 10px 0;
+
+}
+
+
+#list-itens{
+    font-size: 4rem;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+
+#list-itens li{
+    text-transform: uppercase;
+    font-weight: 200;
+
+}
+
+
+#list-itens li:hover{
+    transition: all 1.5s;
+    color: var(--color-blue-50);
+
+}
+
+
+#list-itens a{
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    
+}
+
+ 
+#list-itens li:before{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-blue-50);
+    transition: all 0.5s ease-in;
+    
+}
+
+
+#list-itens li:hover:before{
+    width: 100%;
+
+}
+
+
+#login{
+    display: flex;
+    justify-content: end;
+    
+}
+
+
+#login button {
+    font-size: 1.6rem;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-right: 125px;    
+    margin-top: 50px;
+    
+}
+
+
+#login button i {
+    font-size: 1.6rem;
+    margin-right: 3px;
+    
+}
+
+
+#login button:hover{
+    background-color: var(--color-blue-100);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+
+
+#new-socio{
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+
+#new-socio h1{
+    font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+
+#new-socio h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+#new-socio button{
+    background: var(--color-blue-100-transp);
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+#new-socio button:hover{
+    background-color: var(--color-blue-100);
+    transition: all 0.3s ease;
+}

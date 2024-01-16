@@ -1,0 +1,90 @@
+/* 
+Fonte: Open Sans (google fonts)
+Cores das fontes: #555, #111
+Cor dos links: #fd8a24
+Cor da top bar e da footer: #333 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+
+    
+}
+
+
+.top-bar{
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 5px solid #fd8a24;
+    font-size: 1.5em;
+    
+}
+
+header{
+
+    max-width: 888px;
+    margin: auto;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+header h1{
+    font-size: 2.6em;
+}
+
+.autor{
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 8px;
+    color: #111;
+}
+
+.social-icon{
+    width: 1.5em;
+    margin: 10px 0;
+    padding-right: 15px;
+}
+
+main{
+    max-width: 648px;
+    margin: auto;
+}
+
+
+main p{
+    padding: 20px 0;
+}
+
+.picture{
+    max-width: 648px;
+}
+
+.links{
+    text-decoration: none;
+    color: #fd8a24;
+    font-weight: bold;
+
+}
+
+figcaption{
+    font-size: 0.8em;
+}
+
+.title{
+    color: #111;
+}
+
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+}

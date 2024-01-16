@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+header{
+    background-color: #48C5CE;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.title{
+    font-size: 26px;
+}
+
+.conteiner{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.conteiner-card{
+    display: flex;
+    height: 500px;
+    background-image: url(./images/people.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 400px;
+    background-color: rgba(213, 213, 213, 0.793);
+    padding: 25px;
+    margin: 30px;
+    justify-content: center;
+    
+    
+}
+
+.description-title{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.description-text{
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.data-input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.input{
+    padding: 10px;
+    margin-bottom: 8px;
+    
+}
+
+.button{
+    background-color: #48C5CE;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 1px rgba(0, 0, 0, 0);
+    
+}
+
+footer{
+    background-color: #151414;
+    padding: 40px 0;
+    padding-right: 40px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    justify-content: center;
+
+    
+
+}
+
+.picture{
+    width: 150px;
+}
+
+.description{
+    width: 350px;
+    
+}
+
+.description p, h1{
+    padding-bottom: 10px;
+}

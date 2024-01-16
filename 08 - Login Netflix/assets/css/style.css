@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conteiner{
+    background: url(../images/background.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+#conteiner::before{
+    content: '';
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
+}
+
+
+header img {
+    position: relative;
+    width: 180px;
+    margin: 20px 35px;
+    z-index: 2;
+
+}
+
+#login_body{
+    background-color: rgb(0, 0, 0, 0.75);
+    margin: 0px auto ;
+    color: white;
+    max-width: 450px;
+    height: 550px;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+
+}
+
+#login_box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 60px 68px 40px;
+    
+
+}
+
+#login_box h1{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+
+.input_box input{
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 15px; 
+    outline: none;   
+
+}
+
+.input_box input:focus {
+    
+    background-color: #444;
+    border-bottom: 2px solid orange;
+}
+
+.input_box input:hover {
+    
+    background-color: #444;
+}
+
+
+.submit{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px; 
+    padding: 15px;
+    background-color: rgb(229,9,20);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background-color: rgb(255, 2, 15);
+}
+
+
+#support{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+#remember input{
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+#remember{
+    display: flex;
+    align-items: center;
+}
+
+#help a{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+#new_user{
+    color: #b3b3b3;
+}
+
+#new_user a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+#new_user a:hover{
+    text-decoration:underline;
+    
+}
+
+#notice{
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+#notice a{
+    color:rgb(86, 86, 223);
+    text-decoration: none;
+}
+
+
+
+
+
+
